@@ -22,6 +22,22 @@ Inspired by JavaScript [SweetAlert](http://tristanedwards.me/sweetalert)
 ## Setup
 The simplest way to use SweetAlertDialog is to add the library as aar dependency to your build.  Tag v1.4.0 has the updates.  See: https://jitpack.io/ for full instructions.
 
+## Update (Release-2.0)
+You can use following new methods to customize the UI elements.
+- setTitleTextAppearance(int resId)
+- isShowTitleText()
+- showTitleText(boolean isShow)
+
+- setContentTextAppearance(int resId)
+
+- setCancelTextAppearance(int resId)
+- setCancelButtonBackground(int resId)
+
+- setConfirmTextAppearance(int resId)
+- setConfirmButtonBackground(int resId)
+- isShowConfirmButton()
+- showConfirmButton(boolean isShow)
+
 ## Usage
 
 show material progress
