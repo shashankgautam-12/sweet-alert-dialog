@@ -14,13 +14,34 @@ SweetAlert for Android, a beautiful and clever alert dialog
 
 Inspired by JavaScript [SweetAlert](http://tristanedwards.me/sweetalert)
 
-[Demo Download](https://github.com/pedant/sweet-alert-dialog/releases/download/v1.1/sweet-alert-sample-v1.1.apk)
-
-## ScreenShot
-![image](https://github.com/pedant/sweet-alert-dialog/raw/master/change_type.gif)
-
 ## Setup
-The simplest way to use SweetAlertDialog is to add the library as aar dependency to your build.  Tag v1.4.0 has the updates.  See: https://jitpack.io/ for full instructions.
+
+The simplest way to use SweetAlertDialog is to add the library as aar dependency to your build.
+
+**Maven**
+
+    <dependency>
+        <groupId>com.github.sahilgarg90</groupId>
+	    <artifactId>sweet-alert-dialog</artifactId>
+	    <version>2.0</version>
+    </dependency>
+    
+**Gradle**
+
+Add it in your root build.gradle at the end of repositories
+
+    allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+Add the dependency in your project level build.gradle
+
+    dependencies {
+        implementation 'com.github.sahilgarg90:sweet-alert-dialog:2.0'
+    }
 
 ## Update (Release-2.0)
 You can use following new methods to customize the UI elements.
@@ -37,6 +58,9 @@ You can use following new methods to customize the UI elements.
 - setConfirmButtonBackground(int resId)
 - isShowConfirmButton()
 - showConfirmButton(boolean isShow)
+
+## ScreenShot
+![image](https://github.com/pedant/sweet-alert-dialog/raw/master/change_type.gif)
 
 ## Usage
 
