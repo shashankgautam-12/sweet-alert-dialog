@@ -1,9 +1,8 @@
-## Attention: This is a fork of the apparently dead project https://github.com/pedant/sweet-alert-dialog/
-**The only changes made are to update it to work with materialish-progress 1.7 and the current gradle build tools.**
 
-The original readme with minor alterations follows.  I've removed the Chinese language readme as I can only read and write English.
+## Attention: This is a fork of the kind of upgraded version(https://github.com/thomper/sweet-alert-dialog) of a dead project(https://github.com/pedant/sweet-alert-dialog/)
+**I have some changes to customize the main UI contents of the dialog**
 
-I did not write this library, all credit goes to pedant.
+I did not write this library, all credit goes to pedant & thomper.
 
 I've also removed references to the original author's website as it appears to have been offline for some time (pedant dot cn).
 

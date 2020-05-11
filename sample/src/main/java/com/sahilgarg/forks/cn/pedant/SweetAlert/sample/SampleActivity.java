@@ -1,11 +1,11 @@
-package com.ontbee.legacyforks.cn.pedant.SweetAlert.sample;
+package com.sahilgarg.forks.cn.pedant.SweetAlert.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 
-import com.ontbee.legacyforks.cn.pedant.SweetAlert.SweetAlertDialog;
+import com.sahilgarg.forks.cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class SampleActivity extends Activity implements View.OnClickListener {
 

@@ -8,17 +8,17 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 9
+        minSdkVersion 21
     }
 
     lintOptions {
         abortOnError false
     }
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '29.0.3'
 }
 
 dependencies {
-    compile 'com.pnikosis:materialish-progress:1.7'
+    implementation 'com.pnikosis:materialish-progress:1.7'
 }
 
 // I may push to maven central at some point, for now just using jitpack.io.

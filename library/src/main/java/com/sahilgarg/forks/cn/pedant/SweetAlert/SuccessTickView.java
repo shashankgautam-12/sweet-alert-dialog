@@ -1,4 +1,4 @@
-package com.ontbee.legacyforks.cn.pedant.SweetAlert;
+package com.sahilgarg.forks.cn.pedant.SweetAlert;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 
-import com.ontbee.legacyforks.cn.pedant.SweetAlert.R;
+import com.sahilgarg.forks.cn.pedant.SweetAlert.R;
 
 public class SuccessTickView extends View {
     private float mDensity = -1;
