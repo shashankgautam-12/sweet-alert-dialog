@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
@@ -12,6 +13,7 @@ import android.view.animation.Transformation;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.pnikosis.materialishprogress.ProgressWheel;
@@ -200,28 +202,6 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         changeAlertType(alertType, false);
     }
 
-    private void setAlertTypeLayoutParams(FrameLayout.LayoutParams params) {
-        if (mDialogView != null) {
-            switch (mAlertType) {
-                case ERROR_TYPE:
-                    mErrorFrame.setLayoutParams(params);
-                    break;
-                case SUCCESS_TYPE:
-                    mSuccessFrame.setLayoutParams(params);
-                    break;
-                case WARNING_TYPE:
-                    mWarningFrame.setLayoutParams(params);
-                    break;
-                case CUSTOM_IMAGE_TYPE:
-                    mCustomImage.setLayoutParams(params);
-                    break;
-                case PROGRESS_TYPE:
-                    mProgressFrame.setLayoutParams(params);
-                    break;
-            }
-        }
-    }
-
     /**
      * Setup Title Text Configuration
      */
@@ -238,10 +218,11 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
-    public void setTitleTextAppearance(int resId) {
+    public SweetAlertDialog setTitleTextAppearance(int resId) {
         if (mTitleTextView != null) {
             mTitleTextView.setTextAppearance(this.getContext(), resId);
         }
+        return this;
     }
 
     public boolean isShowTitleText() {
@@ -288,10 +269,11 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
-    public void setContentTextAppearance(int resId) {
+    public SweetAlertDialog setContentTextAppearance(int resId) {
         if (mContentTextView != null) {
             mContentTextView.setTextAppearance(this.getContext(), resId);
         }
+        return this;
     }
 
     public boolean isShowContentText() {
@@ -322,16 +304,18 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
-    public void setCancelTextAppearance(int resId) {
+    public SweetAlertDialog setCancelTextAppearance(int resId) {
         if (mCancelButton != null) {
             mCancelButton.setTextAppearance(this.getContext(), resId);
         }
+        return this;
     }
 
-    public void setCancelButtonBackground(int resId) {
+    public SweetAlertDialog setCancelButtonBackground(int resId) {
         if (mCancelButton != null) {
             mCancelButton.setBackgroundResource(resId);
         }
+        return this;
     }
 
     public boolean isShowCancelButton() {
@@ -367,16 +351,18 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
-    public void setConfirmTextAppearance(int resId) {
+    public SweetAlertDialog setConfirmTextAppearance(int resId) {
         if (mConfirmButton != null) {
             mConfirmButton.setTextAppearance(this.getContext(), resId);
         }
+        return this;
     }
 
-    public void setConfirmButtonBackground(int resId) {
+    public SweetAlertDialog setConfirmButtonBackground(int resId) {
         if (mConfirmButton != null) {
             mConfirmButton.setBackgroundResource(resId);
         }
+        return this;
     }
 
     public boolean isShowConfirmButton() {

@@ -1,7 +1,6 @@
 package com.sahilgarg.forks.cn.pedant.SweetAlert;
 
 import android.content.Context;
-import android.view.ViewGroup;
 
 import com.pnikosis.materialishprogress.ProgressWheel;
 
@@ -164,12 +163,5 @@ public class ProgressHelper {
     public void setSpinSpeed(float spinSpeed) {
         mSpinSpeed = spinSpeed;
         updatePropsIfNeed();
-    }
-
-    public void setLayoutParams(ViewGroup.LayoutParams params) {
-        if (mProgressWheel != null) {
-            mProgressWheel.setLayoutParams(params);
-            updatePropsIfNeed();
-        }
     }
 }
