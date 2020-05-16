@@ -9,6 +9,8 @@
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">65%</item>
     </style>
 
     <style name="dialog_blue_button" parent="android:Widget.Button">
