@@ -319,6 +319,31 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
+    public SweetAlertDialog setCancelButtonWidth(int width) {
+        if (mCancelButton != null) {
+            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) mCancelButton.getLayoutParams();
+            params.width = width;
+            mCancelButton.setLayoutParams(params);
+        }
+        return this;
+    }
+
+    public SweetAlertDialog setCancelButtonHeight(int height) {
+        if (mCancelButton != null) {
+            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) mCancelButton.getLayoutParams();
+            params.height = height;
+            mCancelButton.setLayoutParams(params);
+        }
+        return this;
+    }
+
+    public SweetAlertDialog setCancelButtonPadding(int start, int top, int end, int bottom) {
+        if (mCancelButton != null) {
+            mCancelButton.setPaddingRelative(start, top, end, bottom);
+        }
+        return this;
+    }
+
     public boolean isShowCancelButton() {
         return mShowCancel;
     }
@@ -362,6 +387,31 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
     public SweetAlertDialog setConfirmButtonBackground(int resId) {
         if (mConfirmButton != null) {
             mConfirmButton.setBackgroundResource(resId);
+        }
+        return this;
+    }
+
+    public SweetAlertDialog setConfirmButtonWidth(int width) {
+        if (mConfirmButton != null) {
+            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) mConfirmButton.getLayoutParams();
+            params.width = width;
+            mConfirmButton.setLayoutParams(params);
+        }
+        return this;
+    }
+
+    public SweetAlertDialog setConfirmButtonHeight(int height) {
+        if (mConfirmButton != null) {
+            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) mConfirmButton.getLayoutParams();
+            params.height = height;
+            mConfirmButton.setLayoutParams(params);
+        }
+        return this;
+    }
+
+    public SweetAlertDialog setConfirmButtonPadding(int start, int top, int end, int bottom) {
+        if (mConfirmButton != null) {
+            mConfirmButton.setPaddingRelative(start, top, end, bottom);
         }
         return this;
     }
