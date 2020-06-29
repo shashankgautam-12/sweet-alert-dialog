@@ -23,7 +23,7 @@ The simplest way to use SweetAlertDialog is to add the library as aar dependency
     <dependency>
         <groupId>com.github.sahilgarg90</groupId>
 	    <artifactId>sweet-alert-dialog</artifactId>
-	    <version>2.4</version>
+	    <version>2.5</version>
     </dependency>
     
 **Gradle**
@@ -40,7 +40,7 @@ Add it in your root build.gradle at the end of repositories
 Add the dependency in your project level build.gradle
 
     dependencies {
-        implementation 'com.github.sahilgarg90:sweet-alert-dialog:2.4'
+        implementation 'com.github.sahilgarg90:sweet-alert-dialog:2.5'
     }
 
 ## Update (Release-2.*)
@@ -50,6 +50,7 @@ You can use following new methods to customize the UI elements.
 - showTitleText(boolean isShow)
 
 - setContentTextAppearance(int resId)
+- setContentTextGravity(int gravity)
 
 - setCancelTextAppearance(int resId)
 - setCancelButtonBackground(int resId)

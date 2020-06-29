@@ -277,6 +277,13 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
+    public SweetAlertDialog setContentTextGravity(int gravity) {
+        if (mContentTextView != null) {
+            mContentTextView.setGravity(gravity);
+        }
+        return this;
+    }
+
     public boolean isShowContentText() {
         return mShowContent;
     }

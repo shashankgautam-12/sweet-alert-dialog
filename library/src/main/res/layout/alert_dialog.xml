@@ -132,11 +132,10 @@
 
     <TextView
         android:id="@+id/content_text"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:textAlignment="center"
         android:textColor="#797979"
         android:textSize="14sp"
         android:visibility="gone" />
@@ -145,6 +144,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp"
         android:gravity="center">
 
         <Button
